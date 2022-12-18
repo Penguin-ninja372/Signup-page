@@ -1,0 +1,35 @@
+.background{
+    background-color:rgb(11, 36, 26);
+    color:rgb(89, 190, 139);
+}
+
+.centered{
+    text-align:center;
+}
+
+.title{
+    padding-top: 35px;
+    padding-bottom: 15px;
+    font-size: 3.5em;
+    font-family: 'Russo One', sans-serif;
+    color:rgb(60, 204, 197)
+}
+
+.content{
+    font-family: 'Montserrat';
+}
+
+.button{
+    margin-bottom: 25px;
+    background-color:rgb(41, 153, 131);
+}
+
+.button:hover{
+    background-color:rgb(60, 204, 197);
+    color:rgb(11, 36, 26);
+}
+
+.mynav{
+    background-color:rgb(9, 61, 57);
+    color:rgb(11, 36, 26);
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Russo+One">
+
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body class="background">
+    <nav class="navbar navbar-default navbar-dark mynav navbar-expand-lg">
+        <div class="container-fluid techfont loader">
+            <div class="navbar-header">
+                <a class="navbar-brand bigbrand" href="{% url 'index' %}">Home</a>
+            </div>
+            <ul class="nav navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'about' %}">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'new_user' %}">Sign Up!</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'user_list' %}">Users</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid background">
+        {% block body_block %}
+            <!-- Anything outside of this will be inherited if you extend! -->
+        {% endblock %}
+    </div>
+</body>
+</html>
